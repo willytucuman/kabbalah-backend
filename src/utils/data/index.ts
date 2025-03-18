@@ -1,5 +1,6 @@
 import { faker } from '@faker-js/faker';
 
+// Datos falsos para usuarios
 export const USERS = [
   {
     name: 'Gastón',
@@ -96,5 +97,54 @@ export const USERS = [
     birthDate: faker.date.birthdate(),
     nationality: 'Argentina',
     isDeleted: false,
+  },
+];
+
+
+// Datos falsos para categorías
+export const CATEGORIES = [
+  { name: 'Electrónica', description: 'Productos electrónicos' },
+  { name: 'Ropa', description: 'Ropa para hombres, mujeres y niños' },
+  { name: 'Hogar', description: 'Artículos para el hogar' },
+  { name: 'Deportes', description: 'Equipamiento deportivo' },
+  { name: 'Juguetes', description: 'Juguetes para niños' },
+];
+
+// Datos falsos para productos
+export const PRODUCTS = [
+  {
+    name: 'Smartphone X',
+    description: 'Un smartphone de última generación',
+    price: 799.99,
+    stock: 100,
+    imageUrl: faker.image.urlLoremFlickr({ category: 'technology' }),
+  },
+  {
+    name: 'Laptop Pro',
+    description: 'Laptop potente para trabajo y juegos',
+    price: 1299.99,
+    stock: 50,
+    imageUrl: faker.image.urlLoremFlickr({ category: 'technology' }),
+  },
+  {
+    name: 'Camiseta Casual',
+    description: 'Camiseta cómoda y elegante',
+    price: 29.99,
+    stock: 200,
+    imageUrl: faker.image.urlLoremFlickr({ category: 'fashion' }),
+  },
+  {
+    name: 'Sofá Moderno',
+    description: 'Sofá cómodo y moderno para tu hogar',
+    price: 499.99,
+    stock: 30,
+    imageUrl: faker.image.urlLoremFlickr({ category: 'home' }),
+  },
+  {
+    name: 'Balón de Fútbol',
+    description: 'Balón oficial para partidos profesionales',
+    price: 49.99,
+    stock: 150,
+    imageUrl: faker.image.urlLoremFlickr({ category: 'sports' }),
   },
 ];
